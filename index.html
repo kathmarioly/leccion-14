@@ -5,7 +5,7 @@
 	<title>Formulario de datos</title>
 </head>
 <body>
-	<h1>Formulario de datos</h1>
+	<h1 align="center">Formulario de datos</h1>
 	 <form action="post">
          <p align="center">
          <label for="nombre"> Nombre </label><br>
@@ -18,7 +18,18 @@
          <p align="center">
          <label for="telefono">Teléfono</label><br>
          <input type="text" name="telefono" pattern="^[+569]\d{8}$" title="Debe empezar con +569" required><br>
-         </p>          
+         </p>
+         <p align="center"> 
+         <label for="dropdown required">Escoge un vehiculo para continuar</label><br>
+         <select name="dropdown" required>
+             <option value="">Kia</option>
+             <option value="">Ford</option>
+             <option value="">Mazda</option>
+             <option value="">Hyundai</option>
+             <option value="">Mercedes</option>
+             <option value="">Mustang</option>
+         </select>
+         </p> <br>                 
         <p align="center">
 		<label for="pw">Crea tu contraseña</label><br>
 		<input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
