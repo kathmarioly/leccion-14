@@ -6,19 +6,24 @@
 </head>
 <body>
 	<h1>Formulario de datos</h1>
-	<p>
-		<label for="n">Nombre</label><br>
-		<input type="nombre" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
-	</p>
-	<p>
-		<label for="n">Apellido</label><br>
-		<input type="apellido" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
-	</p>
-	<p>
-		<label for="pw">Crear tu contraseña</label><br>
+	 <form action="post">
+         <p align="center">
+         <label for="nombre"> Nombre </label><br>
+         <input type="text" name="name" required><br>
+         </p>          
+         <p align="center">
+         <label for="apellido">Apellido</label><br>
+         <input type="text" name="lastname" required><br>
+         </p>    
+         <p align="center">
+         <label for="telefono">Teléfono</label><br>
+         <input type="text" name="telefono" pattern="^[+569]\d{8}$" title="Debe empezar con +569" required><br>
+         </p>          
+        <p align="center">
+		<label for="pw">Crea tu contraseña</label><br>
 		<input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
 	</p> 
-	<p>
+	<p align="center">
 	<input type="submit" name="" value="send">
 	</p>
 	<script src="js/javascript.js"></script>
